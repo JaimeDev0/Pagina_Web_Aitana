@@ -103,7 +103,7 @@ nav {
     float: left;
     background: linear-gradient(45deg, #FF66FF, #66CCFF, #9900FF, #00FF00, #FFD700, #FFA500);
     width: 100%;
-    height: 30px;
+    height: 40px;
     margin-top: 5px;
     margin-left: 0;
 }
@@ -111,7 +111,7 @@ nav ul li a {
     margin-right: 15px;
     text-decoration: none;
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 28px;
     padding: 4px;
     color: #ffffff;
 }
@@ -131,12 +131,12 @@ nav button{
     background-color: #09f;
     color: #ffffff;
     width: 10%;
-    height: 27px;
+    height: 32px;
     padding: 5px 5px;
-    font-size: 15px;
+    font-size: 20px;
     border: none;
     margin-right: 40px;
-    margin-top: -23.5px;
+    margin-top: -31.5px;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -148,10 +148,7 @@ nav button a{
     text-decoration: none;
     color: #ffffff;
 }
-.imgAitana{
-    width: 100%;
-    height: auto;
-}
+
 footer{
     width: 100%;
     height: 80px;
@@ -160,11 +157,12 @@ footer{
     margin-top: 15px;
     overflow: hidden;
     padding-bottom: 5px;
+    font-size: 20px;
 }
 .copyright, .enlaces-legales {
     float: left;
     margin-left: 90px;
-    margin-top: 10px; 
+    margin-top: 5px; 
 }
 .enlaces-legales ul  {
     list-style: none;
@@ -174,17 +172,19 @@ footer{
     float: right;
     margin-right: 200px;
     margin-top: 20px;
+    font-size: 24px;
     align-items: center;
     display: flex;
     gap: 30px;
 }
-
 .redes-sociales ul li:hover {
-    transform: scale(1.1); /* Ajusta el valor según tus preferencias para el efecto hover */
+    transform: scale(1.1); 
 }
 
-/*pantallas menos 850px*/
-@media only screen and (max-width: 850px) {
+/*Responsive*/
+
+/*Medidas pantallas menos de 1020px*/
+@media only screen and (max-width: 1020px) {
     header {
         height: auto;
     }
@@ -194,7 +194,7 @@ footer{
     }
     .buscar {
         float: none;
-        margin: 7px 11px;
+        margin: 7px 9px;
         text-align: center;
         margin-top: 9px;
     }
@@ -215,58 +215,64 @@ footer{
         margin-bottom: 10px;
     }
     nav button {
-        height: 40px;
+        height: 35px;
         width: 140px;
-        float: none;
-        margin: 10px auto;
-        display: block;
-    }
-    .imgAitana {
-        max-width: 100%;
-        height: auto;
+        float: right;
+        margin: 5px 80px;
     }
     footer {
         height: auto;
     }
     .copyright, .enlaces-legales {
         float: none;
-        margin-left: 0;
+        margin-left: 15px;
         margin-top: 10px;
     }
     .redes-sociales ul {
         float: none;
-        margin: 10px auto;
+        margin: 10px 15px;
         text-align: center;
     }
 }
 
-
-
-@media only screen and (max-width: 630px) {
+/*Medidas pantallas menos de 783px*/
+@media only screen and (max-width: 783px) {
+    header {
+        height: auto;
+    }
+   
     h1 {
-        font-size: 40px;
-        margin-left: 10px; /* Ajusta según sea necesario */
+        font-size: 35px;
+        margin-left: 100px;
+        margin-top: 10px;
     }
 
     .buscar {
         float: none;
-        margin: 10px auto;
+        margin: 9px 25px;
         text-align: center;
     }
 
     .btn {
-        right: 5px;
+        margin-right: 15px;
+    }
+
+    nav {
+        height: auto;
     }
 
     nav ul {
-        margin-left: 0;
-        padding: 0;
         text-align: center;
+        margin-left: 0;
+        padding: 10px;
+       
     }
 
     nav ul li {
-        display: inline-block;
+        display: block;
         margin: 0;
+        margin-bottom: 10px;
+
     }
 
     nav button {
@@ -279,11 +285,45 @@ footer{
         height: auto;
     }
 
+    .copyright, .enlaces-legales {
+        float: none;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
     .redes-sociales ul {
         float: none;
-        margin: 10px auto;
+        margin: 10px 10px;
         text-align: center;
     }
 }
 
+/*Medida nav distintos tamaños*/
+
+@media only screen and (max-width: 605px) {
+    nav ul li a{
+        margin: 10px;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 577px) {
+    h1 {
+        font-size: 25px;
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+    nav ul li a{
+        margin: 10px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+}
+@media only screen and (max-width: 507px) {
+    nav ul li a{
+        margin: 10px;
+        font-size: 15px;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
 
